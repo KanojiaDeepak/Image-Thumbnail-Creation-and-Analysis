@@ -1,0 +1,2 @@
+Flask==3.0.3
+google-cloud-pubsub==2.21.5
