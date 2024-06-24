@@ -3,6 +3,8 @@
 
 A pipeline created using GCP services which enables user to add any keyword on UI and the related images and its thumbnail will be available in GCS and its metadata info will be accessed through bigquery.
 
+![architecture diagram](./architecture.png)
+
 ## GCP services used:
 
 ### Secret Manager
@@ -22,7 +24,6 @@ Create an Artifact Registry Repository
 
 Build,Tag and Push an Artifact
 ```
-
 docker build -t <IMAGE_NAME> ./cloud_run/
 docker tag <IMAGE_NAME> us-central1-docker.pkg.dev/<PROJECT_ID>/<REPOSITORY_NAME>/<IMAGE_NAME>
 docker push us-central1-docker.pkg.dev/<PROJECT_ID>/<REPOSITORY_NAME>/<IMAGE_NAME>
